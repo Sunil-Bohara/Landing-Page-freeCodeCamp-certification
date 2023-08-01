@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap');
+
+#header {
+    max-width: 100vw;
+    height: 10vh;
+    background-color: rgb(240, 236, 230);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    padding-inline: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 35px;
+    width: auto;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.nav-link {
+    font-size: 1rem;
+    margin: 3rem;
+
+    &:hover {
+        border-bottom: 2px solid rgb(255, 179, 0);
+        padding-bottom: 2px;
+    }
+}

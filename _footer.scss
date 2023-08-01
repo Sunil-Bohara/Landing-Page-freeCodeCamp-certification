@@ -1,0 +1,21 @@
+#footer {
+    background-color: #80808029;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+
+    .footer-nav {
+        a {
+            color: #000;
+            margin-inline: 1.5rem;
+
+            &:hover {
+                border-bottom: 2px solid rgb(255, 179, 0);
+            }
+        }
+    }
+
+    p {
+        text-align: center;
+    }
+}

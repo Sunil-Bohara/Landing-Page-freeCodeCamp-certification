@@ -1,0 +1,123 @@
+@import "utilities";
+@import "header";
+@import "footer";
+@import "media_queries";
+
+.home-headline {
+    max-width: 100vw;
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+        color: #111;
+    }
+
+    #email{
+        display: block;
+        margin-top: 1.2rem;
+        font-size: 1rem;
+        text-align: center;
+        padding: 5px 0px;
+        padding-inline-end: 100px;
+        border: 1px solid #333;
+    }
+
+    #submit {
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-top: 1.2rem;
+        padding: 4px 8px;
+        border: none;
+        background-color: rgba(255, 187, 0, 0.921);
+    }
+}
+
+::placeholder {
+    font-size: 0.9rem;
+}
+
+.feature {
+    max-width: 70vw;
+    margin: 0 auto;
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+
+    .feature--img {
+        height: 55px;
+        width: auto;
+    }
+
+    .feature--info {
+        margin-inline-start:  5rem;
+
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        p {
+            margin-top: 0.5rem;
+            line-height: 1.3rem;
+        }
+    }
+}
+
+#how-it-works {
+    width: 98.9vw;
+    margin-top: 11vh;
+    display: flex;
+    justify-content: center;
+}
+
+#pricing {
+    max-width: 72vw;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5rem auto;
+}
+
+.pricing__box {
+    border: 1px solid #444;
+    width: 22vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+        width: 100%;
+        font-size: 1rem;
+        background-color: #80808029;
+        padding: 10px;
+        text-align: center;
+        margin-bottom: 1.1rem;
+    }
+
+    p {
+        margin-top: 0.9rem;
+        font-size: 1rem;
+    }
+
+    .btn {
+        border: none;
+        font-size: 1.2rem;
+        color: #000;
+        font-weight: semi-bold;
+        background-color: rgba(255, 187, 0, 0.921);
+        padding: 8px 12px;
+        margin: 1.5rem 0rem 1rem 0rem;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.pricing__box p:first-of-type {
+    font-size: 1.5rem;
+    font-weight: bold;
+}

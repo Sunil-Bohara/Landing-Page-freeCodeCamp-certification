@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(240, 236, 230);
+}
+
+a {
+    text-decoration: none;
+}
+a:any-link {
+    color: #000;
+}
