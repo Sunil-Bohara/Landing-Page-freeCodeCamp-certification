@@ -40,20 +40,48 @@
     font-size: 0.9rem;
 }
 
+// .feature {
+//     max-width: 70vw;
+//     margin: 0 auto;
+//     margin-top: 4rem;
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+
+//     .feature--img {
+//         height: 55px;
+//         width: auto;
+//     }
+
+//     .feature--info {
+//         margin-inline-start:  5rem;
+
+        // h2 {
+        //     font-size: 1.5rem;
+        // }
+
+        // p {
+        //     margin-top: 0.5rem;
+        //     line-height: 1.3rem;
+        // }
+//     }
+// }
+
 .feature {
-    max-width: 70vw;
+    width: 80vw;
     margin: 0 auto;
     margin-top: 4rem;
     display: flex;
+    justify-content: space-evenly;
     align-items: center;
 
     .feature--img {
-        height: 55px;
-        width: auto;
+        height: 50px;
+        width: 50px;
     }
 
     .feature--info {
-        margin-inline-start:  5rem;
+        width: 80%;
 
         h2 {
             font-size: 1.5rem;

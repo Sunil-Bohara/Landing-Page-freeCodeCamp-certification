@@ -57,6 +57,7 @@ a:any-link {
   padding: 1rem;
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 #footer .footer-nav a {
   color: #000;
@@ -66,6 +67,8 @@ a:any-link {
   border-bottom: 2px solid rgb(255, 179, 0);
 }
 #footer p {
+  height: 100%;
+  vertical-align: middle;
   text-align: center;
 }
 
@@ -97,6 +100,16 @@ a:any-link {
   .logo {
     height: 22px;
   }
+  .feature {
+    width: 85vw;
+  }
+  .feature .feature--img {
+    height: 35px;
+    width: 35px;
+  }
+  .feature .feature--info {
+    width: 90%;
+  }
   #how-it-works #video {
     width: 85vw;
     height: 40vh;
@@ -118,24 +131,48 @@ a:any-link {
     margin-inline: 0.6rem;
     font-size: 0.8rem;
   }
+  #footer p {
+    font-size: 0.8rem;
+  }
 }
 @media screen and (max-width: 500px) {
   #header {
     padding-inline: 0.5rem;
   }
   .nav-link {
-    font-size: 0.8rem;
     margin: 0.3rem;
+    font-size: 0.7rem;
   }
   .logo {
     height: 20px;
+  }
+  .feature {
+    width: 100vw;
+    justify-content: space-between;
+  }
+  .feature .feature--info {
+    width: 90%;
+    margin-left: 1rem;
   }
   #how-it-works #video {
     width: 85vw;
     height: 40vh;
   }
+  #pricing {
+    min-width: 60vw;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem auto;
+  }
+  #pricing .pricing__box {
+    width: 80vw;
+    margin-inline: 0.8rem;
+  }
   #footer .footer-nav a {
-    margin-inline: 0.3rem;
+    margin-inline: 5px;
+    font-size: 0.7rem;
+  }
+  #footer p {
     font-size: 0.7rem;
   }
 }
@@ -145,14 +182,29 @@ a:any-link {
   }
   .nav-link {
     margin: 3px;
-    font-size: 0.7rem;
+    font-size: 0.6rem;
   }
   .logo {
     height: 15px;
   }
+  .feature {
+    width: 100vw;
+    justify-content: space-between;
+  }
+  .feature .feature--info {
+    width: 90%;
+    margin-left: 1rem;
+  }
   #how-it-works #video {
     width: 85vw;
     height: 40vh;
+  }
+  #footer .footer-nav a {
+    font-size: 0.6rem;
+    margin-inline: 5px;
+  }
+  #footer p {
+    font-size: 0.6rem;
   }
 }
 @media screen and (max-width: 300px) {
@@ -161,14 +213,32 @@ a:any-link {
   }
   .nav-link {
     margin: 3px;
-    font-size: 0.6rem;
+    font-size: 0.5rem;
   }
   .logo {
-    height: 15px;
+    height: 10px;
   }
-  #email {
-    width: 80%;
+  .feature {
+    width: 100vw;
+    justify-content: space-between;
+  }
+  .feature .feature--info {
+    width: 90%;
+    margin-left: 1rem;
+  }
+  .home-headline #email {
+    width: 95%;
     margin: 0 auto;
+    font-size: 5rem;
+    padding-left: 4px;
+    padding-inline-end: 5px;
+  }
+  #footer .footer-nav a {
+    margin-inline-end: 3px;
+    font-size: 0.4rem;
+  }
+  #footer p {
+    font-size: 0.4rem;
   }
 }
 .home-headline {
@@ -210,18 +280,19 @@ a:any-link {
 }
 
 .feature {
-  max-width: 70vw;
+  width: 80vw;
   margin: 0 auto;
   margin-top: 4rem;
   display: flex;
+  justify-content: space-evenly;
   align-items: center;
 }
 .feature .feature--img {
-  height: 55px;
-  width: auto;
+  height: 50px;
+  width: 50px;
 }
 .feature .feature--info {
-  margin-inline-start: 5rem;
+  width: 80%;
 }
 .feature .feature--info h2 {
   font-size: 1.5rem;
